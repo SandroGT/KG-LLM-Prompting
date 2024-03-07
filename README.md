@@ -34,7 +34,7 @@ pip install .
  in the environmental variable `OPENAI_API_KEY`.
 
 ### Running the pipeline
-The following is an example of how to execute the pipeline to extract entities and triplets from a text:
+The following is an example of how to execute the pipeline to extract entities and triples from a text:
 
 ```python
 from llm_open_ie import oie_pipeline
