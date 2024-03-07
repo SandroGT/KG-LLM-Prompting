@@ -1,0 +1,48 @@
+[
+  {
+    "doc": {
+      "id": str | int,
+      "uri": str,
+      "title": str,
+      "text": str,
+    },
+    "entities": {
+      "gpt": [
+        {
+          "label": str,
+          "description": str,
+          "types": list[str],
+          "annotation": {  # Only on ST and REBEL_20
+            "entity correctness": bool,
+            "description from text": bool,
+            "type correctness": list[bool],
+            "rebel match": bool  # Only on REBEL_20
+          }
+        },
+        ...
+      ],
+      "gold": [...],  # Only on REBEL and REBEL_20
+      "annotation": {  # Only on ST and REBEL_20
+        "gpt missed": list
+      }
+    },
+    "triples": {
+      "gpt": [
+        {
+          "subject label": str,
+          "predicate label": str,
+          "predicate description": str,
+          "object label": str,
+          "annotation": {  # Only on ST and REBEL_20
+            "triple correctness": bool,
+            "relation from text": bool,
+            "rebel match": bool  # Only on REBEL_20
+          }
+        },
+        ...
+      ],
+      "gold": [...]  # Only on REBEL and REBEL_20
+    }
+  },
+  ...
+]
