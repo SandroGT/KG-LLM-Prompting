@@ -1,7 +1,8 @@
 # Knowledge Graph Engineering through Iterative Zero-shot LLM Prompting
 
-This repository hosts the codebase and dataset from the paper ***Knowledge Graph Engineering through Iterative Zero-shot
- LLM Prompting***
+This repository hosts the codebase and dataset from the paper [***A Zero-Shot Strategy for Knowledge Graph Engineering
+ Using GPT-3.5***](https://www.sciencedirect.com/science/article/pii/S1877050924026231) (formerly ***Knowledge Graph
+ Engineering through Iterative Zero-Shot LLM Prompting*** in its preprint version).
 
 ## Codebase
 
@@ -60,3 +61,20 @@ The datasets mentioned in the paper can be found in the `dataset` folder of this
  you'll need the original REBEL dataset in the `dataset\REBEL\original` folder. You can download it manually from its
  [HuggingFace dataset card](https://huggingface.co/datasets/Babelscape/rebel-dataset/tree/main) or automatically using
  the `dataset\REBEL\original\rebel_download.sh` script.
+
+## Citing
+
+If you find [our work](https://www.sciencedirect.com/science/article/pii/S1877050924026231) useful, please cite:
+```bib
+@article{CARTA20242235,
+  author = {Salvatore Carta and Alessandro Giuliani and Marco Manolo Manca and Leonardo Piano and Alessandro Sebastian Podda and Livio Pompianu and Sandro Gabriele Tiddia},
+  title = {A Zero-Shot Strategy for Knowledge Graph Engineering Using GPT-3.5},
+  journal = {Procedia Computer Science},
+  year = {2024},
+  volume = {246},
+  pages = {2235-2243},
+  doi = {https://doi.org/10.1016/j.procs.2024.09.573},
+  url = {https://www.sciencedirect.com/science/article/pii/S1877050924026231},
+  note = {28th International Conference on Knowledge Based and Intelligent information and Engineering Systems (KES 2024)},
+}
+```
